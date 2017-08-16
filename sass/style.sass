@@ -1,0 +1,188 @@
+@import normalize
+@import boxsizing
+@import clearfix
+
+/*  VARIABLES  */
+$color-text : #000
+$color-text-light: #fff
+$color-bg   : #F2F2F2
+
+
+/* MIXINS & PLACEHOLDERS */
+%left
+  width: 50%
+  float: left
+
+/* GENERIC */
+body, html
+  height: 100%
+
+body
+  font-family: "Poppins","Helvetica",arial,sans-serif
+  color: $color-text
+  background: $color-bg
+
+a
+  color: inherit
+
+/*  LAYOUT  */
+
+/* HEADER */
+.header
+  height: 790px
+  background: url(../img/hero.jpg) center
+  background-size: cover
+  position: relative
+  color: $color-text-light
+  &::before
+    content: ''
+    background: url(../img/logo_white.png) center
+    background-size: cover
+    position: absolute
+    left: 36px
+    top: 36px
+    display: block
+    width: 19px
+    height: 63px
+
+.header__content
+  position: absolute
+  bottom: 68px
+  left: 68px
+
+.header__title
+  font-size: 82px
+  line-height: 95px
+  font-weight: 600
+  max-width: 550px
+
+.header__cta
+  display: inline-block
+  font-size: 12px
+  font-weight: 500
+  text-align: center
+  padding: 15px 28px
+  letter-spacing: .1em
+  text-transform: uppercase
+  border: 2px solid $color-text-light
+  text-decoration: none
+  &::before
+    content: ''
+    display: inline-block
+    margin-right: 10px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 5px 0 5px 10px
+    border-color: transparent transparent transparent $color-text-light
+
+/* SECTIONS */
+
+.technologie, .technologie__left, .section, .section__content
+  @extend %clearfix
+
+.technologie, .technologie__left, .technologie__right
+  height: 768px
+
+.technoligie, .technologie__left, .technologie__right, .technologie__smartphone, .technologie__module, .section__image, .section__content
+  @extend %left
+
+section img
+  display: block
+
+/* SECTION TECHNOLOGIE */
+.technologie__header
+  height: 380px
+  position: relative
+
+.technologie__title
+  font-size: 35px
+  line-height: 51px
+  font-weight: 600
+  position: absolute
+  margin: 0 auto
+  padding: 0 68px
+  top: 50%
+  transform: translateY(-50%)
+
+.technologie__smartphone, .technologie__module
+  height: 388px
+  padding: 80px
+
+.technologie__img
+  width: 34px
+
+.technologie__smartphone
+  background-color: #6BD3CC
+
+.technologie__module
+  background-color: #FF4F42
+
+.technologie__right
+  background: url(../img/phone1.jpg) center
+  background-size: cover
+
+.technologie__content p
+  font-size: 16px
+  line-height: 29px
+  letter-spacing: .32px
+  font-weight: 300
+
+/* SECTION MIX AND LAST */
+.section__image
+  height: 380px
+  background: url('../img/2.jpg') center
+  background-size: cover
+  &.last
+    background: url('../img/03.jpg') center
+    background-size: cover
+
+.section__content
+  position: relative
+  height: 380px
+  font-size: 14px
+  line-height: 23px
+  letter-spacing: .28px
+  font-weight: 100
+
+.section__header
+  font-size: 25px
+  line-height: 44px
+  font-weight: 600
+  margin-bottom: 60px
+
+.inner_content
+  position: absolute
+  top: 50%
+  padding: 0 68px
+  transform: translateY(-50%)
+
+/* FOOTER */
+.footer
+  height: 100px
+  background: $color-text
+  color: $color-text-light
+  font-size: 12px
+  letter-spacing: 1.8px
+  text-transform: uppercase
+  line-height: 100px
+
+.footer__nav
+  float: right
+
+.footer__link
+  text-decoration: none
+  margin-right: 20px
+
+img[alt="Twitter logo"]
+  width: 15px
+
+.footer__credits
+  margin: 0
+  padding-left: 20px
+  font-size: 18px
+
+img[alt="ATAP logo"]
+  width: 120px
+  position: relative
+  top: 7px
