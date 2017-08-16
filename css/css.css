@@ -1,0 +1,24 @@
+
+html {
+	box-sizing:border-box;
+}
+
+*,*:before, *:after {
+	box-sizing:inherit;
+}
+
+
+/*header
+/////////////
+///////////*/
+
+header div
+{
+	padding:30px;
+	height:700px;
+	background:url(../img/hero.jpg);
+	background-size: 100%;
+	background-position: 000px -400px;
+	overflow:hidden;
+
+}
