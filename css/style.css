@@ -1,7 +1,7 @@
 *:before, *after {
 	box-sizing: inherit;
 }
-html, body, header {
+html, body, header, footer {
 	height: 100%;
 	width: 100%;
 	font-family: 'Poppins', arial, sans-serif;
@@ -18,6 +18,7 @@ header, footer {
 	padding: 20px;
 	color: #fff;
 	background-color: #000;
+	display: inline-block;
 }
 a {
 	color: #fff;
@@ -26,11 +27,16 @@ a {
 	font-size: 12px;
 	letter-spacing: 1px;
 }
+main div {
+	display: inline-block;
+	vertical-align: top;
+}
 /*header*/
 header {
 	background: url('../img/hero.jpg') no-repeat -100%;
 	background-size: cover;
 	height: 474px;
+	position: relative;
 }
 header img {
 	height: 60px;
@@ -47,4 +53,115 @@ h1 {
 	margin: 70px 0 40px;
 	font-weight: 600px;
 	line-height: 60px;
+}
+h3 {
+	font-size: 1.7em;
+	margin: 0 0 50px;
+}
+#arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 9px;
+	border-color: transparent transparent transparent #ffffff;
+	margin-right: 15px;
+	position: relative;
+	top: 2px;
+}
+/*main*/
+/*section1*/
+.module3 > div:first-child {
+	position: relative;
+	height: 380px;
+	width: 100%;
+}
+h2 {
+	font-size: 2.2em;
+	line-height: 60px;
+	padding: 20px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.change {
+	height: 680px;
+}
+.change > div:last-child {
+	height: 100%;
+	background: url(../img/phone1.jpg) no-repeat center;
+	background-size: cover;
+}
+.module3 {
+	height: 100%;
+	position: relative;
+}
+.module3 > div+div {
+	position: absolute;
+	bottom: 0;
+	height: 300px;
+	font-weight: 300;
+	line-height: 1.7em;
+}
+.module3 > div:first-child+div {
+	background: #6bd3cc;
+	left: 0;
+}
+.module3 > div:last-child {
+	background: #ff4f42;
+	left: 50%;
+}
+.module3 .midsize div {
+	padding: 20px;
+}
+.module3 p {
+	margin: 10px 0 0;
+}
+/*section2-3*/
+.mix {
+	height: 380px;
+}
+.img1 {
+	background: url(../img/2.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+.img2 {
+	background: url(../img/03.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+.mix > .midsize {
+	position: relative;
+	height: 100%;
+}
+.mix div div {
+	padding: 20px;
+	font-weight: 300;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*footer*/
+footer {
+	position: relative;
+	height: 100px;
+}
+footer > a {
+	position: absolute;
+	left: 0;
+	left: 20px;
+	font-size: 1.1em;
+}
+footer > a img {
+	width: 125px;
+	position: relative;
+	top: 7px;
+}
+nav {
+	position: absolute;
+	right: 0;
 }
