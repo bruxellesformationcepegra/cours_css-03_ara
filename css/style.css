@@ -1,0 +1,104 @@
+html, body
+{
+  font-family: 'Poppins', sans-serif;
+}
+/*.block
+{
+  display: block;
+  height: 380px;
+  width: 100%;
+}
+
+.change>div
+{
+  width: 50%;
+  display: inline-block;
+}
+
+.cyan img, .red img
+{
+  height:40px;
+}
+.cyan
+{
+  background-color: #6BD3CC;
+}
+
+.red
+{
+  background-color: #FF4F42;
+}*/
+
+
+/*change*/
+
+.change>div{
+  width: 50%;
+  display: inline-block;
+}
+.change .cover
+{
+  height: 680px;
+  background: url('../img/phone.jpg');
+  width: 50%;
+  position: relative;
+}
+.frame .modules
+{
+  height: 380px;
+  display: inline-block;
+}
+.frame .content, .modules .content
+{
+  position: relative;
+}
+header
+{
+  position: relative;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  height: 790px;
+  width: 100%;
+
+  color: white;
+  text-align: bottom;
+}
+header img
+{
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  height: 70px;
+}
+header h1
+{
+  font-size: 70px;
+}
+
+header div
+{
+  position: absolute;
+  padding: 50px 60px;
+  bottom:0;
+}
+button
+{
+  border: 2px solid white;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+button::before
+{
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #ffffff;
+  margin-right: 15px;
+
+}
