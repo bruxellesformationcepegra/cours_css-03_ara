@@ -2,56 +2,163 @@ html, body
 {
   font-family: 'Poppins', sans-serif;
 }
-/*.block
+footer
 {
   display: block;
-  height: 380px;
-  width: 100%;
+  background-color: black;
+  height: 100px;
+  color: white;
+  position: relative;
 }
-
-.change>div
+footer>*
 {
+  display: inline-block;
+  position: relative;
+  /*padding: 40px 0;*/
+}
+/*footer img
+{
+  position: relative;
+  transform: translateY(12.5%);
+}*/
+footer>a
+{
+  left:20px;
+  padding-left: 20px;
+}
+footer>a>img
+{
+  height: 25px;
+}
+footer nav
+{
+  right: 20px;
+}
+footer a
+{
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+}
+footer a img
+{
+  vertical-align: middle;
+}
+footer nav a
+{
+  margin-right: 25px;
+}
+footer nav img
+{
+  height: 15px;
+}
+footer>*
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mix .cover, .built .cover
+{
+  background-size: cover;
   width: 50%;
   display: inline-block;
+  /*height: 100%;*/
 }
-
-.cyan img, .red img
-{
-  height:40px;
+.mix, .built{
+  font-size:0;
 }
-.cyan
-{
-  background-color: #6BD3CC;
+.mix div, .built div{
+    vertical-align: top;
 }
-
-.red
+.blockheight
 {
-  background-color: #FF4F42;
-}*/
-
+  height: 380px;
+}
+.mix article, .built article
+{
+  font-size: 16px;
+  padding: 60px;
+  margin: 0;
+  height: 100%;
+}
+.mix .cover
+{
+  background-image: url("../img/2.jpg");
+}
+.built .cover
+{
+  background-image: url("../img/03.jpg");
+}
 
 /*change*/
 
-.change>div{
+.change
+{
   width: 50%;
   display: inline-block;
 }
 .change .cover
 {
+  display: inline-block;
   height: 680px;
-  background: url('../img/phone.jpg');
+  background: url('../img/phone1.jpg');
+  background-size: cover;
+  background-position: center;
   width: 50%;
   position: relative;
 }
-.frame .modules
+.frame, .modules
 {
   height: 380px;
   display: inline-block;
+  width:50%;
 }
-.frame .content, .modules .content
+.content img
+{
+  height:40px;
+}
+.frame
+{
+  background-color: #6BD3CC;
+}
+.modules
+{
+  background-color: #FF4F42;
+}
+.title
+{
+  height:340px;
+  text-align: center;
+  vertical-align: middle;
+}
+.content
 {
   position: relative;
+  width: 50%;
+  font-size: 16px;
+  display: inline-block;
 }
+
+.change-sec
+{
+  position: relative;
+  font-size: 0;
+}
+.change-sec>div
+{
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+.change
+{
+  font-size: 0;
+  width: 100%
+}
+
 header
 {
   position: relative;
