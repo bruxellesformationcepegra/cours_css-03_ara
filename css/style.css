@@ -69,6 +69,7 @@ footer>*
 }
 .mix, .built{
   font-size:0;
+  position: relative;
 }
 .mix div, .built div{
     vertical-align: top;
@@ -79,10 +80,13 @@ footer>*
 }
 .mix article, .built article
 {
+  position: absolute;
   font-size: 16px;
   padding: 60px;
   margin: 0;
-  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  /*height: 100%;*/
 }
 .mix .cover
 {
