@@ -208,9 +208,15 @@ footer img {
 	width: 120px;
 }
 
+small {
+	text-align: right;
+	vertical-align: top;
+}
+
 footer small a {
 	margin-left: 15px;
 	vertical-align: middle;
+
 }
 
 footer small a:last-child {
