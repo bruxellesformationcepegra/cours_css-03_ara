@@ -4,3 +4,189 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+/* General */
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.content {
+	padding-left: 68px;
+	position: relative;
+	width: 70%;
+}
+
+/* Header */
+header {
+	height: 790px;
+	background: url('../img/hero.jpg') center;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+header img {
+	height: 60px;
+	position: absolute;
+	top: 34px;
+	left: 34px;
+}
+.headings {
+	position: absolute;
+	bottom: 68px;
+	left: 68px;
+}
+h1 {
+	font-weight: 600;
+	font-size: 80px;
+}
+.button {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	padding: 15px 25px 15px 35px;
+	letter-spacing: 1px;
+	position: relative;
+}
+.button::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent #ffffff;
+	width: 5px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+/* Sections */
+.change > div, .mix-match-swap > div, .built-to-last > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Change */
+.change > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.change .cover {
+	height: 680px;
+	background: url('../img/phone1.jpg') center;
+	background-size: cover;
+}
+
+.title {
+	height: 380px;
+}
+.frame, .modules {
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.frame {
+	background: #6bd3cc;
+}
+.modules {
+	background: #ff4f42;
+}
+h2 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 600;
+	font-size: 35px;
+}
+.frame, .modules {
+	position: relative;
+}
+.frame .content::before {
+	background: url('../img/illy1.png');
+}
+.modules .content::before {
+	background: url('../img/illy2.png');
+}
+.frame .content::before, .modules .content::before {
+	content: '';
+	width: 34px;
+	height: 59px;
+	display: block;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+.frame .content, .modules .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 30px;
+}
+
+/* Mix-match-swap & Built to last */
+.mix-match-swap > div, .built-to-last > div {
+	height: 380px;
+}
+.mix-match-swap .content div, .built-to-last .content div {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.mix-match-swap .cover {
+	background: url('../img/2.jpg') center top;
+	background-size: cover;
+}
+.built-to-last .cover {
+	background: url('../img/03.jpg') center;
+	background-size: cover;
+}
+.mix-match-swap p, .built-to-last p {
+	width: 65%;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+h3 {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+/* Footer */
+footer {
+	background: #000;
+	padding: 50px 34px;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+footer figure {
+	margin: 0;
+}
+footer > * {
+	display: inline-block;
+	width: 50%;
+}
+footer img {
+	width: 120px;
+	vertical-align: middle;
+}
+footer small {
+	text-align: right;
+}
+footer small a {
+	margin-left: 25px;
+	vertical-align: middle;
+}
+footer small a:last-child {
+	width: 15px;
+	height: 15px;
+	background: url('../img/twitter-light.png');
+	display: inline-block;
+	background-size: cover;
+}
