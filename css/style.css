@@ -21,6 +21,7 @@ header {
 	width: 100%;
 	height: 790px;
 	background: url(../img/hero.jpg) center;
+	background-size: cover;
 	color: white;
 	position: relative;
 }
@@ -28,18 +29,146 @@ header {
 header img {
 	position: absolute;
 	top: 60px;
-	left: 3%;
+	left: 50px;
 	width: 20px
 }
 
 header h1 {
 	width: 530px;
 	position: absolute;
-	top: 35%;
-	left: 3%;
-	font-size: 5.125em;
+	top: 38%;
+	left: 50px;
+	font-size: 5em;
 	line-height: 95px;
+	font-weight: bold;
+}
+
+header a {
+	padding: 15px 30px;
+	border: 2px solid white;
+	position: absolute;
+	top: 85%;
+	left: 50px;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header a span {
+	margin-right: 10px
 }
 /*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 M A I N 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+section, div {
+	display: inline-block;
+}
 
+.first div {
+	width: 50%;
+}
+
+.life {
+	width: 100%;
+	min-height: 380px;
+	background-color: #F2F2F2;
+}
+
+h2 {
+	padding-left: 50px;
+	font-size: 2.2em;
+	line-height: 50px;
+	width: 60%;
+	margin-top: 135px
+}
+
+.slider {
+	width: 50%;
+	min-height: 680px;
+	background-color: #D3D3D1;
+	background: url(../img/phone3.jpg) center;
+	background-size: cover;
+	vertical-align: top
+}
+
+.araframe, .aramodule {
+	width: 50%;
+	min-height: 300px;
+	vertical-align: top;
+	line-height: 30px
+}
+
+.araframe {
+	background-color: #6BD3CC;
+}
+
+.araframe div {
+	display: inline-block;
+	padding-top: 50px;
+	padding-left: 50px;
+	width: 80%
+}
+
+.aramodule div {
+	display: inline-block;
+	padding-top: 50px;
+	padding-left: 50px;
+	width: 80%
+}
+
+.aramodule {
+	background-color: #FF4F42;
+}
+
+
+.first img {
+	width: 35px
+}
+
+.imgrain, .mixmatch, .built, .imgskate {
+	width: 50%;
+	height: 380px;
+	background-color: #F2F2F2;
+	vertical-align: top
+}
+
+.imgrain {
+	background: url(../img/2.jpg) center;
+	background-size: cover
+}
+
+.imgskate {
+	background: url(../img/03.jpg) center;
+	background-size: cover
+}
+
+h3 {
+	font-size: 1.7em;
+	margin-left: 50px;
+	margin-top: 110px
+}
+
+.mixmatch p, .built p {
+	line-height: 23px;
+	margin-left: 50px;
+	width: 60%
+}
 /*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 F O O T E R 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+footer {
+	background-color: black;
+	color: white;
+	padding: 50px;
+	width: 100%
+}
+
+footer img:first-child {
+	width: 100px;
+	vertical-align: middle
+}
+
+footer img:last-child {
+	width: 13px;
+}
+
+.footright {
+	display: inline-block;	
+	margin-left: 80%
+}

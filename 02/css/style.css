@@ -1,0 +1,202 @@
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 B O D Y 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+		font-family: 'Poppins', sans-serif;
+}
+
+.content {
+	margin-left: 68px;
+	width: 75%;
+	display: inline-block;
+}
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 T E X T 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 N A V 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 H E A D E R 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+header {
+	height: 790px;
+	background: url(../img/hero.jpg) center;
+	background-size: cover;
+	position: relative;
+}
+
+header img {
+	height: 60px;
+	position: absolute;
+	top: 34px;
+	left: 34px;
+}
+
+header div {
+	position: absolute;
+	bottom: 68px;
+	left: 68px;
+	color: white;
+}
+
+h1 {
+	font-size: 5em
+}
+
+header a {
+	padding: 15px 30px;
+	border: 2px solid white;
+	position: absolute;
+	top: 90%;
+	left: 0px;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 M A I N 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+
+
+/*SECTION 01*/
+
+
+h2 {
+	margin: 0;
+	line-height: 380px;
+}
+
+.sect01 {
+	height: 680px;
+}
+
+.left01 {
+	vertical-align: top;
+	display: inline-block;
+	width: 50%;
+	height: 380px;
+	background-color: #F2F2F2;
+}
+
+.right01 {
+	display: inline-block;
+	width: 50%;
+	height: 680px;
+	background: url(../img/phone3.jpg) center;
+	background-size: cover
+}
+
+.green, .red {
+	display: inline-block;
+	width: 50%;
+	height: 300px;
+	vertical-align: top;
+	line-height: 30px
+}
+
+.left01 img {
+	width: 35px;
+}
+
+.green {
+	background-color: #6BD3CC;
+	position: relative;
+}
+
+.green .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.red {
+	background-color: #FF4F42;
+	position: relative;
+}
+
+.red .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*SECTION 02*/
+.left02{
+	background: url(../img/2.jpg) center -30px;
+	background-size: cover;
+}
+
+.right02, .left02 {
+	width: 50%;
+	height: 380px;
+	display: inline-block;
+	vertical-align: top
+}
+
+.right02 {
+	position: relative;
+}
+
+.right02 .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 23px;
+}
+
+/*SECTION 03*/
+.right03{
+	background: url(../img/03.jpg) center;
+	background-size: cover;
+}
+
+.right03, .left03 {
+	width: 50%;
+	height: 380px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.left03 {
+	position: relative;
+}
+
+.left03 .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 23px;
+}
+/*🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 F O O T E R 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟*/
+footer {
+	background-color: black;
+	color: white;
+	height: 100px;
+	position: relative;
+}
+
+figure {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+}
+
+figure img {
+	width: 100px;
+	vertical-align: middle;
+}
+
+small {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+
+small img {
+	width: 15px
+}
