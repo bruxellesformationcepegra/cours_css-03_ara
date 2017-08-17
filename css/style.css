@@ -100,7 +100,7 @@ footer>*
   width: 50%;
   display: inline-block;
 }
-.change .cover
+.change-sec .cover
 {
   display: inline-block;
   height: 680px;
@@ -109,6 +109,11 @@ footer>*
   background-position: center;
   width: 50%;
   position: relative;
+}
+.change-sec>div
+{
+  vertical-align: top;
+  height: 680px;
 }
 .frame, .modules
 {
