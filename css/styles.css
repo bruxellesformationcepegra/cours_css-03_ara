@@ -1,0 +1,225 @@
+html, body {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+/* HEADER */
+
+header {	
+	text-align: left;
+	background: url(../img/hero.jpg) no-repeat center;
+	background-size: cover;
+	height: 790px;
+	position: relative;
+}
+
+header img {
+	height: 60px;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+h1 {
+	padding-top: 140px;
+	padding-left: 50px;
+	color: #fff;
+	font-size: 90px;
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+.button {
+	text-transform: uppercase;
+	border: 2px solid;
+	font-size: 12px;
+	display: inline-block;
+	letter-spacing: 2px;
+	padding: 20px 26px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	background: : #fff;
+	position: absolute;
+	margin-left: 50px;
+	vertical-align: top;
+}
+
+/* MAIN */
+
+h2 {
+	text-align: left;
+	letter-spacing: 2px;
+	margin: 0;
+	font-weight: 600;
+	line-height: 40px;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.change {
+	display: block;
+	margin: 0;
+	font-size: 0;
+}
+
+.change > div {
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+}
+
+.title {
+	height: 380px;
+	float: left;
+}
+
+.content {
+	padding-left: 68px;
+	position: relative;
+	width: 80%;
+
+}
+
+.green .content, .orange .content {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	line-height: 30px;
+}
+
+.green {
+	background: #6bd3cc;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;	
+	height: 310px;	
+	position: relative;
+	width: 50%;
+	font-size: 16px;
+}
+
+.orange {
+   	background: #ff4f42;
+   	display: inline-block;
+   	vertical-align: top;
+   	text-align: left;
+	height: 310px;
+	position: relative;	
+	width: 50%;
+	font-size: 16px;
+}
+
+.change .cover {
+	height: 690px;
+	background: url('../img/phone1.jpg') center;
+	background-size: cover;
+	float: right;
+}
+
+.green img, .orange img {
+	height: 80px;
+	padding-left: 68px;
+	padding-top: 40px;
+}
+
+
+
+
+.block {
+	height: 380px;
+	font-size: 0;
+}
+
+.block > div {
+	width: 50%;
+	display: inline-block;
+}
+
+.image {
+	height: 380px;
+	display: inline-block;
+	background: url(../img/2.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.txt {
+	text-align: left;
+	position: relative;
+	font-size: 0px;
+	display: inline-block;
+	height: 380px;
+}
+	
+.posi {
+	position: absolute;
+	top: 50%; 
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.image2 {
+	height: 380px;
+	display: inline-block;
+	background: url(../img/03.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.block p, .block h3 {
+	margin-left: 30px;
+	margin-right: 50px;
+	line-height: 30px;
+}
+
+.block p {
+	font-size: 16px;
+}
+
+footer {
+	background: #000;
+	height: 100px;
+	font-size: 0;
+	padding: 50px 34px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+footer figure {
+	margin: 0;
+} 
+
+footer > * {
+	display: inline-block;
+	width: 50%;
+}
+
+footer img {
+	width: 120px;
+}
+
+footer small a {
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+footer small a:last-child {
+	width: 15px;
+	height: 15px;
+	background: url(../img/twitter-light.png);
+	display: inline-block;
+	background-size: cover;
+}
+
+
+
