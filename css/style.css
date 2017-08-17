@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/*header*/
+header {
+	background: url("../img/hero.jpg") no-repeat center;
+	background-size: cover;
+/*	background-position: center;*/
+	height:790px;
+	position:relative;
+	color:white;
+}
+/*Mon header a désormais une image de fond avec qques propriétés en plus 
+qu'on connait déjà*/
+
+header img {
+	position:absolute;
+	height: 60px;
+	top: 34px;
+	left: 34px;
+}
+/*on a demandé à ce que le logo fasse 60px de haut. Moi j'avais utilisé un scale 
+avant mais en fait, c'est pas vraiment universel. Donc vaut mieux forcer une hauteur, 
+la largeur suivra automatiquement. On ne va pas avoir un logo déformé. 
+Mais attention, que si l'image est mise côté html !! Si c'est en css, 
+il faut préciser et la hauteur et la largeur*/
+.headings {
+	position:absolute;
+	bottom:68px;
+	left:68px;
+}
+/*Ici j'ai créé une classe headings, cette classe va regrouper mon titre h1
+et mon button. Ils sont tous les deux alignés à gauche. Ca va me permettre de 
+positionner cet élément en absolu. Car ensuite, je met mon élément de classe button 
+en relative. Ca aurait été compliqué de positionner la flèche */
+
+h1 {
+	font-weight: 600;
+	font-size: 80px;
+}
+
+.button {
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+	padding: 15px 25px 15px 35px;
+	letter-spacing: 1px;
+	position: relative;
+}
+.button::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent #fff;
+	width: 5px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+/*On met un before pour pouvoir positionner la flèche du bouton*/
+.content {
+	padding-left: 68px;
+	position: relative;
+	width: 70%;
+}
+
+/*Avant de travailler, on observe. 
+Partie de droite, assez facile. 
+Partie de gauche, ça a l'air assez emmerdant. */
+.tittle {
+	height: 380px;
+}
+/*je mets mon texte en 380px*/
+.change > div {
+	width: 50%;
+	display:inline-block;
+	vertical-align: top;
+}
+/*La je demande à ce que chaque enfant direct de life, qui est un div 
+fasse 50 pourcent de large et deviennent un inline block*/
+
+/*Mon image est en cover, la classe cover, je vais l'utiliser souvent. 
+Ca se répète dans ma page */
+.change .cover {
+	height: 680px;
+	background: url(../img/phone3.jpg) center;
+	background-size: cover;	
+}
+
+
+/*
+on va s'occuper de mes titre. Ils ont des choses en communs. 
+Mes h2 prennent genre 70% de largeur
+Content aura une largeur particulière 
+et on le repositionne en plein centre avec transform*/
+h2 {
+	margin:0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 600;
+	font-size: 35px;
+}
+
+.frame, .modules {
+	position: relative;
+	display: inline-block;
+	width: 50%;	
+}
+
+/*section*/
+.change > div, .mix-match-swap > div, .built-to-last > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+/*Mes deux blocs de texte ont une illustration qui est positionnée au dessus du texte. 
+Donc ça peut être un block. On regarde tout ce qu'il y a en commun. */
+.frame .content::before {
+	background: url("../img/illy1.png");
+}
+.modules .content::before {
+	background: url("../img/illy2.png");
+}
+/*Ici, on pose juste l'url des images, c'est la seule chose qui diffère pour les deux blocs*/
+.frame .content::before, .modules .content:before {
+	content:'';
+	display: block;
+	background-size: cover;
+	width: 34px;
+	height: 59px;
+	margin-bottom: 10px;
+}
+
+.frame .content, .modules .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 30px;
+}
+
+/*.frame .content 
+je sélectionne la classe content qui est contenue dans la classe frame*/
+
+/*On va attaquer les deux petits blocs, ils ont similaires. Du texte et une image 
+*/
+.mix-match-swap > div, .built-to-last > div {
+height: 380px;
+}
+
+.mix-match-swap .content div, .built-to-last .content div {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.mix-match-swap .cover {
+	background: url("../img/2.jpg") center top;
+	background-size: cover;
+}
+/*mettre l'image de fond pour mix-match*/
+.built-to-last .cover {
+	background: url("../img/03.jpg") center;
+	background-size: cover;
+}
+.mix-match-swap p, .built-to-last p {
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	width: 65%;
+}
+h3 {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+footer {
+	background-color: black;
+	position: relative;
+	padding : 50px 20px;
+}
+
+footer a {
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+.footer-right, .footer-left{
+	display: inline-block;
+	width: 50%;
+}
+.footer-right {
+	text-align: right;
+	vertical-align: middle;
+}
+.footer-right a img{
+	margin-right: 20px;
+	vertical-align: middle;
+
+}
+.footer-right a {
+	margin-left: 15px;
+}
+.footer-left img {
+	vertical-align: middle;
+	width: 120px;
+}
+
+
+
+
