@@ -1,0 +1,256 @@
+html , body {
+  background-color: #fff;
+  height: 100%;
+}
+
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+.content {
+   padding-left: 68px;
+}
+/*Typo*/
+
+h1 , h2 , h3 , p , a  {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 82px;
+  line-height: 95px;
+  font-weight: 600;
+  color: #fff;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 51px;
+  font-weight: 600;
+
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 44px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+.life p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.thin {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 100;
+  width: 450px;
+  height: 92px;
+}
+
+/*header*/
+header {
+  background: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  position: relative;
+}
+
+img[alt="Logo Ara"] {
+    margin-left: 68px;
+    height: 60px;
+    padding-top: 30px;
+}
+ header img {
+ }
+h1 {
+  margin-left:68px;
+  margin-top: 250px;
+  padding-bottom: 50px;
+}
+
+.button {
+  font-size: 12px;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  letter-spacing: 1 px;
+  margin-left: 68px;
+  font-weight: 500;
+
+}
+
+/*life*/
+main {
+  font-size: 0;
+}
+
+h2 {
+  height: 153px;
+  width: 483.5px;
+  position: absolute;
+   left: 50%;
+   top: 25%;
+   transform: translate(-50% , -50%);
+}
+.life {
+height: 768px;
+font-size: 0;
+}
+
+.left {
+  width: 50%;
+  display: inline-block;
+  font-size: 0;
+  height: 768px;
+  vertical-align: top;
+  position: relative;
+}
+.blanc {
+  height: 380px;
+}
+.blue {
+  background: #6BD3CC;
+  display: inline-block;
+  width: 50%;
+  height: 388px;
+  padding: 68px;
+   vertical-align: top;
+}
+.red {
+  background:#FF4F42;
+  display: inline-block;
+  width: 50%;
+  height: 388px;
+  vertical-align: top;
+  padding: 68px;
+}
+
+.blue img , .red img {
+  width: 36px;
+  padding-bottom: 20px;
+}
+
+.life figure {
+  background-image: url(../img/phone1.jpg);
+  background-size: cover;
+  background-position:center;
+  width: 50%;
+  display: inline-block;
+  height: 768px;
+  margin: 0;
+}
+
+/*mix*/
+.mix .content {
+   width: 50%;
+   font-size: 0;
+   height: 380px;
+   position: relative;
+}
+.mix > div {
+   display: inline-block;
+}
+.mix figure {
+   margin: 0;
+   height: 380px;
+   width: 50%;
+   background-image: url(../img/2.jpg);
+   background-position:top center;
+   background-size: cover;
+   display: inline-block;
+}
+.lop {
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.mix .built {
+   height: 380px;
+   font-size: 0;
+}
+.built .content {
+   width: 50%;
+   font-size: 0;
+   height: 380px;
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+}
+.built figure {
+   margin: 0;
+   height: 380px;
+   width: 50%;
+   background-image: url(../img/03.jpg);
+   background-position:center;
+   background-size: cover;
+   display: inline-block;
+}
+/*FOOTER*/
+
+footer {
+   height: 100px;
+   background: #000;
+   font-size: 0;
+   position: relative;
+   vertical-align: top;
+}
+
+.gauche , .droite {
+   display: inline-block;
+
+}
+.gauche img {
+   width: 120px;
+
+}
+.gauche {
+   width: 50%;
+   padding-left: 20px;
+   vertical-align: top;
+   position: relative;
+   height: 100px;
+}
+.gauche a {
+   vertical-align: middle;
+   position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.droite {
+   width: 50%;
+   position: relative;
+   height: 100px;
+   vertical-align: top;
+}
+.droite div {
+   position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+img[alt="Twitter"]{
+   width: 15px;
+   vertical-align: middle;
+
+}
+.droite a + a {
+   margin-left: 20px;
+}
