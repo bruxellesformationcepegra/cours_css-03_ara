@@ -1,3 +1,176 @@
-body {
-	background-color: ;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.l100 {
+	width: 100%;
+  display: block;
+}
+.l50 {
+	width: 50%;
+  display: inline-block;
+}
+.h50 {
+	height: 50%;
+}
+.h100 {
+  height: 100%;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.middle {
+	top: 50%; left: 68px;
+	transform: translateY(-50%);
+}
+.left {
+  bottom: 0; left: 0;
+}
+.right {
+  bottom: 0; right: 0;
+}
+body.homepage .cover {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* FONTES */
+h1, h2, h3, p, a, figure {
+	font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 600;
+}
+h1 {
+	font-size: 80px;
+	margin-bottom: 25px;
+	color: #fff;
+}
+h2 {
+	font-size: 35px;
+	line-height: 51px;
+}
+h3 {
+	font-size: 30px;
+}
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+p {
+	font-size: 16px;
+  font-weight: 300;
+	line-height: 29px;
+  margin: 0;
+}
+/* BUTTON */
+a.btn {
+	border: 2px solid #fff;
+	padding: 15px 30px;
+	letter-spacing: 1px;
+}
+/* HEADER */
+header {
+	position: relative;
+	background: url(../img/hero.jpg) no-repeat center;
+	background-size: cover;
+	height: 800px;
+}
+header img:first-child {
+	position: relative;
+	left: 38px; top: 40px;
+	width: 18px;
+}
+header h1, .btn {
+	position: absolute;
+	left: 60px;
+}
+header h1 {
+	bottom: 120px;
+}
+header .btn {
+	bottom: 60px;
+}
+/* MAIN */
+section.life-tech {
+	height: 760px;
+	vertical-align: top;
+}
+.bgcyan{
+	background-color: #6BD3CC;
+}
+.bgrouge {
+	background-color: #FF4F42;
+}
+p > img {
+	width: 25px;
+	display: block;
+  margin-bottom: 20px;
+}
+main section h2 {
+  width: 80%;
+  margin: 0;
+}
+p.middle {
+  padding-right: 40px;
+}
+.bgphone {
+  height: 760px;
+	background: url(../img/phone2.jpg) no-repeat center;
+	background-size: cover;
+
+}
+.mix-match .cover {
+  background: url(../img/2.jpg);
+  height: 380px;
+}
+.build-to .cover {
+  background: url(../img/03.jpg);
+  height: 380px;
+}
+.mix-match > div, .build-to > div {
+  height: 380px;
+}
+.mix-match h3, .build-to h3 {
+  margin:0 0 40px 0;
+}
+.mix-match .absolute, .build-to .absolute {
+  width: 80%;
+}
+section.mix-match, section.build-to {
+  display: block;
+  height: 380px;
+}
+/* FOOTER */
+footer {
+	background-color: #000;
+	height: 100px;
+	position: relative;
+}
+footer * {
+	display: inline-block;
+	vertical-align: middle;
+}
+footer > a.absolute {
+  left: 3%;
+}
+footer > div.absolute {
+  left: 88%;
+}
+footer > div.absolute > a+a {
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+footer img[alt="Google ATAP"] {
+	height: 25px;
+}
+footer img[alt="Twitter"] {
+	height: 12px;
 }
