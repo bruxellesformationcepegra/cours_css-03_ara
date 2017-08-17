@@ -88,6 +88,16 @@ footer>*
   transform: translateY(-50%);
   /*height: 100%;*/
 }
+.title
+{position: relative;}
+.title_content
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
 .mix .cover
 {
   background-image: url("../img/2.jpg");
@@ -124,8 +134,9 @@ footer>*
   height: 380px;
   display: inline-block;
   width:50%;
+  vertical-align: middle;
 }
-.content img
+.content_marge img
 {
   height:40px;
 }
@@ -150,7 +161,10 @@ footer>*
   font-size: 16px;
   display: inline-block;
 }
-
+.content_marge
+{
+  padding: 60px;
+}
 .change-sec
 {
   position: relative;
