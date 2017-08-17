@@ -314,7 +314,7 @@ section img {
 /* SECTION MIX AND LAST */
 .section__image {
   height: 380px;
-  background: url("../img/2.jpg") center;
+  background: url("../img/2.jpg") center top;
   background-size: cover; }
   .section__image.last {
     background: url("../img/03.jpg") center;
