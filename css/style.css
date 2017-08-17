@@ -15,7 +15,7 @@ html, body, header, footer {
 	width: 34px;
 }
 header, footer {
-	padding: 20px;
+	padding: 25px;
 	color: #fff;
 	background-color: #000;
 }
@@ -78,7 +78,7 @@ h3 {
 h2 {
 	font-size: 2.2em;
 	line-height: 60px;
-	padding: 20px;
+	padding: 25px;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -112,7 +112,7 @@ h2 {
 	left: 50%;
 }
 .module3 .midsize div {
-	padding: 20px;
+	padding: 25px;
 }
 .module3 p {
 	margin: 10px 0 0;
@@ -136,7 +136,7 @@ h2 {
 	height: 100%;
 }
 .mix div div {
-	padding: 20px;
+	padding: 25px;
 	font-weight: 300;
 	font-size: 0.9em;
 	line-height: 1.5em;
