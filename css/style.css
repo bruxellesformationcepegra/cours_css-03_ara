@@ -1,0 +1,194 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*
+ Header
+//////////////////*/
+header{
+	color: #fff;
+	height: 790px;
+	background: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+header img{
+	height: 60px;
+	padding-left: 40px;
+	margin-top:40px;
+}
+h1{
+	font-size: 82px;
+	font-weight: 600;
+	width: 550px; 
+}
+.space-left{
+	padding-left: 68px;
+}
+.head-txt{
+	position: absolute;
+	bottom: 80px;
+}
+button{
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	padding: 18px 30px;
+	font-weight: 600;
+	font-size: 14px;
+}
+/*//////////////////
+
+ Main
+//////////////////*/
+main::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	padding:0 68px;
+}
+.divide{
+	width: 50%;
+	height: 760px;
+	float: left;
+}
+.divide::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.double-col{
+	height: 380px;
+	position: relative;
+}
+.double-col h2{
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 51px;
+}
+.double-col h3{
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 44px;
+}
+.double-col p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 23px;
+}
+
+/*///////// Cyan /////////*/
+.cyan{
+	background-color: #6bd3cc;
+}
+/*///////// Red /////////*/
+.red{
+	background-color: #ff4f42;
+}
+.red::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*///////// Cyan,Red /////////*/
+.cyan, .red{
+	width: 50%;
+	height: 380px;
+	float: left;
+	position: relative;
+}
+.cyan div, .red div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.cyan img, .red img{
+	width: 34px;
+}
+.cyan p, .red p{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 29px;
+}
+/*///////// Grey /////////*/
+.grey{
+	background-color: #d0cfcd;
+}
+.grey::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.grey div{
+	background: url(../img/phone1.jpg) center;
+	background-size: cover;
+	height: 100%;
+}
+/*///////// girl /////////*/
+.girl{
+	background: url(../img/2.jpg) center top;
+	background-size: cover;
+}
+/*///////// skate /////////*/
+.skate{
+	background: url(../img/03.jpg) center top;
+	background-size: cover;
+}
+/*//////////////////
+
+Footer
+//////////////////*/
+footer{
+	background-color: #000;
+	height: 100px;
+	position: relative;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+/*///////// Gauche /////////*/
+footer figure img{
+	width: 128px;
+	vertical-align: middle;
+}
+footer figure{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%);
+}
+/*///////// droite /////////*/
+footer small img{
+	width: 15px;
+	vertical-align: middle;
+}
+footer small{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+}
+footer small a{
+	padding-left:30px;
+}
+
+
